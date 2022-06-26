@@ -36,7 +36,7 @@ export default function App() {
       setListCard(response.data);
     });
   }, []);
-
+//teste
   const handleaddValues = (value) => {
     setValues((prevValues) => ({
       ...prevValues,
