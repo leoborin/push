@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="register-container">
-        <h1 className="register-title">Cadastro de Receitas</h1>
+        <h1 className="register-title">Cadastro de Receitas v1</h1>
 
         <input
           type="text"
