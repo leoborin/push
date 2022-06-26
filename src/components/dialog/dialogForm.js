@@ -28,7 +28,7 @@ export default function FormDialog(props) {
   };
 
   const handleEditGame = () => {
-    Axios.put("http://localhost:3001/edit", {
+    Axios.put("https://receitasbackend.herokuapp.com/edit", {
       id: editValues.id,
       name: editValues.name,
       cost: editValues.cost,
@@ -51,7 +51,7 @@ export default function FormDialog(props) {
   };
 
   const handleDeleteGame = () => {
-    Axios.delete(`http://localhost:3001/delete/${editValues.id}`).then(() => {
+    Axios.delete(`https://receitasbackend.herokuapp.com/delete/${editValues.id}`).then(() => {
       props.setListCard(
         props.listCard.filter((value) => {
           return value.id != editValues.id;
